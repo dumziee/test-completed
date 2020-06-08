@@ -24,7 +24,7 @@ Route('login/24', function($id){
 	
 });
 /*
-	The route above will not run because it has no http method attached to it, it will throw a 404 Http response or Not found http response.
+	The route above will not run because it has no http method attached to it, it will throw an InvalidArgumentException.
 	The correct way of writting the Route above will be:-
 	
 	Route::get('login/{id}', function($id){
